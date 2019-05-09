@@ -5,7 +5,6 @@ import {
   Row,
   Card,
   Container,
-  Nav,
   Navbar,
   Form,
   FormControl,
@@ -150,8 +149,6 @@ class Data extends Component {
   componentDidMount() {}
 
   render() {
-    const day = this.state.dates.map(item => <div key={item}>{item}</div>);
-
     //map weather items to divs
     const temps = this.state.weatherData.map(item => (
       <Col md="3">
