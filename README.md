@@ -1,7 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Required packages:
+## Required packages:
 
+React-Bootstrap is used for styling of application:
 npm install react-bootstrap
 
 ## Available Scripts
