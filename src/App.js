@@ -51,7 +51,6 @@ class Data extends Component {
     super(props);
     this.state = {
       weatherData: [],
-      dates: [],
       zipCode: "",
       error: ""
     };
@@ -101,7 +100,6 @@ class Data extends Component {
               "application/xml"
             );
 
-            console.log(responseDoc);
             //get tempNodes length
             let tempLength = responseDoc.getElementsByTagName("temperature")[0]
               .childNodes.length;
@@ -113,12 +111,6 @@ class Data extends Component {
                     ...this.state.weatherData,
                     responseDoc
                       .getElementsByTagName("temperature")[0]
-                      .childNodes[i].textContent.toString()
-                  ],
-                  dates: [
-                    ...this.state.dates,
-                    responseDoc
-                      .getElementsByTagName("time-layout")[0]
                       .childNodes[i].textContent.toString()
                   ],
                   error: ""
