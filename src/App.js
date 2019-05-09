@@ -80,8 +80,6 @@ class Data extends Component {
     let todayFormat = this.dateFormat(today);
     let sevenDayFormat = this.dateFormat(sevenDays);
 
-    console.log("Zip: " + zipCode);
-
     let API =
       "https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?zipCodeList=" +
       zipCode +
@@ -130,7 +128,6 @@ class Data extends Component {
             }
           })
           .catch(error => {
-            console.log(error);
             this.setState({
               error: "Please enter a valid zip code."
             });
@@ -158,7 +155,6 @@ class Data extends Component {
     //map weather items to divs
     const temps = this.state.weatherData.map(item => (
       <Col md="3">
-        {console.log(...item)}
         <Card style={{ width: "12rem" }} className="tempcard">
           <Card.Body>
             <div key={item}>
