@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Required packages:
 
 React-Bootstrap is used for styling of application:
-npm install react-bootstrap
+### `npm install react-bootstrap`
 
 ## Available Scripts
 
