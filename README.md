@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## CORS Issue:
+
+There is an issue I was unable to resolve thus far when running the project locally - Chrome will not allow the fetch of the API to continue due to the following error CORS policy: No 'Access-Control-Allow-Origin' 
+
+Disabling CORS in the browser allows it to run locally for now (see below):
+
+### Windows
+Just do follow steps:
+
+```
+Right click on desktop, add new shortcut
+Add the target as "[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
+Click OK.
+
+NOTE: On Windows 10 command will be: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
+```
+
+### OSX
+`open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security`
+
+https://alfilatov.com/posts/run-chrome-without-cors/
+
 ## Required packages:
 
 React-Bootstrap is used for styling of application:
