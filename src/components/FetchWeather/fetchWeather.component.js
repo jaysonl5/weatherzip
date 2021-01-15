@@ -3,7 +3,7 @@ import React from "react";
 export default function FetchWeather(zipCode, setResponseObj, setLoading){
     console.log('FETCH WEATHER IS BEING CALLED!!')
 
-    const apiKey = '80314378adb8643e2d87e1da5c299508';
+    const apiKey = process.env.REACT_APP_WEATHER_TOKEN;
   
     const apiCall = 'https://api.openweathermap.org/data/2.5/weather/?zip='+zipCode+',us&appid='+apiKey+'&units=imperial'
     let request = new Request(apiCall);

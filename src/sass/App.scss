@@ -3,6 +3,31 @@
 @import "grid";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;1,700|Oswald&display=swap");
 
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+
+
+    @include respond(tab-land){ //width < 900?
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port){ //width < 600?
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}
+
 body{
     background-color: $color-primary;
 }
