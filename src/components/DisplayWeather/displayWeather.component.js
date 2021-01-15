@@ -10,8 +10,9 @@ export default function DisplayWeather(responseObj){
     return(
       <div className="row">
         <div className="col-1-of-3"></div>
+        <div className="col-1-of-3">
         {responseObj.responseObj.cod === 200 ? 
-            <div className="weatherCard col-1-of-3">
+            <div className="weatherCard">
             <h6 className="weatherCard__date">{getDate()}</h6>
               <h2 className="weatherCard__cityName">{responseObj.responseObj.name}</h2>
               
@@ -31,6 +32,7 @@ export default function DisplayWeather(responseObj){
             </div>
           : null 
         }
+        </div>
       <div className="col-1-of-3"></div>
       </div>
     );

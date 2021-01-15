@@ -23,7 +23,8 @@ export default function WeatherForm({setZipCode, setError, error, setResponseObj
     return(
     <div className="row">
         <div className="col-1-of-3"></div>
-            <form className="form__container col-1-of-3" onSubmit={handleSearch}>
+          <div className="col-1-of-3">
+            <form className="form__container" onSubmit={handleSearch}>
                 <input
                     placeholder="Enter a zip code"
                     className="form__input"
@@ -40,6 +41,7 @@ export default function WeatherForm({setZipCode, setError, error, setResponseObj
                 <button className="form__button" disabled={Boolean(error)} type="submit" variant="dark">Submit</button> 
                 
             </form>
+            </div>
         <div className="col-1-of-3"></div>
     </div>
     );
