@@ -1,22 +1,22 @@
-Skip to content
-Why GitHub?
-Enterprise
-Explore
-Marketplace
-Pricing
-Search
+// Skip to content
+// Why GitHub?
+// Enterprise
+// Explore
+// Marketplace
+// Pricing
+// Search
 
-Sign in
-Sign up
-19 256 48 the-road-to-learn-react/hackernews-client
- Code  Issues 0  Pull requests 1  Projects 0  Insights
-Join GitHub today
-GitHub is home to over 36 million developers working together to host and review code, manage projects, and build software together.
+// Sign in
+// Sign up
+// 19 256 48 the-road-to-learn-react/hackernews-client
+//  Code  Issues 0  Pull requests 1  Projects 0  Insights
+// Join GitHub today
+// GitHub is home to over 36 million developers working together to host and review code, manage projects, and build software together.
 
-hackernews-client/src/App.js
-@rwieruch rwieruch Client- or Server-side Search
-1ca2ea7 on Mar 9
-155 lines (135 sloc)  3.24 KB
+// hackernews-client/src/App.js
+// @rwieruch rwieruch Client- or Server-side Search
+// 1ca2ea7 on Mar 9
+// 155 lines (135 sloc)  3.24 KB
 
 import React, { Component } from 'react';
 import './App.css';

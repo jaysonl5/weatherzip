@@ -4,32 +4,14 @@
   color: #ff625e !important;
 }
 
-.bg-light {
-  background-color: #fce9cc !important;
-}
-
 .bg-dark {
   background-color: #123638 !important;
 }
 
-.button {
-  color: #333 !important;
-}
 
 .tempcard {
   margin: 5px;
   background-color: #fce9cc;
-}
-
-.weatherBox {
-  margin: 5px;
-  padding: 5px;
-  width: 20vw;
-  background-color: #dfdfdf;
-  color: #111111;
-  border-radius: 5px;
-  font-family: sans-serif;
-  font-size: 20px;
 }
 
 .tempNumber {

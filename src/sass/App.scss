@@ -1,0 +1,115 @@
+@import "variables";
+@import "mixins";
+@import "grid";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;1,700|Oswald&display=swap");
+
+body{
+    background-color: $color-primary;
+}
+
+.form__container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input{
+    border-radius: 5px;
+    padding: .2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+.form__button{
+    border-radius: 5px; 
+    margin: .2rem;
+    padding: 0 1rem 0 1rem;
+    border: none;
+    background-color: $color-tertiary;
+    color: $color-white;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.form__button:hover{
+    background-color: $color-tertiary-dark;
+}
+
+.weatherCard{
+    width: 30rem;
+    padding: 1rem;
+
+    margin: 1rem 0 0 0;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.815);
+    color: $color-primary;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 1.5rem rgba(0, 0, 0, 0.032),
+    0 1.5rem 1.5rem rgba(0, 0, 0, 0.036),
+    0 1rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.weatherCard__date{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.weatherCard__mainWeather{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.weatherCard__currentTemp{
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.weatherCard__condition{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    margin: .5rem 0 0 1rem;
+    color: $color-tertiary;
+}
+
+.weatherCard__cityName{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: $color-secondary;
+}
+
+.weatherCard__icon{
+    display: block;
+    margin: -3rem auto 0 auto;
+    width: 50%;
+}
+
+.weatherCard__subTemps{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.weatherCard__maxTemp{
+    margin-right: 2rem;
+    color: $color-secondary;
+}
+
+.weatherCard__minTemp{
+    margin-right: 2rem;
+    color: $color-tertiary;
+}
